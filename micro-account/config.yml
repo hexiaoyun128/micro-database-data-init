@@ -1,0 +1,14 @@
+# 数据库连接配置
+database:
+  name: artist-micro-account  # 微服务数据库名称，创建时会自动加上根目录下的数据库名前缀
+  cover: false # 数据库服务器连接参数是否覆盖根目录配置参数，若为true则使用下面的配置参数，可以通过此种设计将微服务的数据库放到不同的服务器上
+  username: root  #微服务数据库用户密码，默认使用根目录的
+  password: cloudy #微服务数据库密码
+  address: 192.168.16.16 #微服务数据库地址
+  port: 3307 # 微服务数据库端口
+  create_tables_file: create_tables.sql # 建表的sql文件，若根目录config.yml中file_prefix为空默认为create_tables.sql，若为pd默认为pc_create_tables.sql
+  
+sequence: # 当前目录下需要执行的数据库初始话sql文件以及执行的顺序
+  - account
+  - account_name
+  - menu

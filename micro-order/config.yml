@@ -1,0 +1,15 @@
+# 数据库连接配置
+database:
+  name: artist-micro-order
+  username: root
+  password: cloudy
+  address: 192.168.16.16
+  port: 3307
+  create_tables_file: create_tables.sql # 建表的sql文件，若根目录config.yml中file_prefix为空默认为create_tables.sql，若为pd默认为pc_create_tables.sql
+  
+sequence: # 当前目录下需要执行的数据库初始话sql文件以及执行的顺序
+   - orders
+   - orders_product
+   - orders_product_detail
+   - shoppingcart
+   - shoppingcart_detail

@@ -1,0 +1,25 @@
+# 数据库连接配置
+database:
+  user: root  #数据库用户名
+  password: cloudy  # 数据库密码
+  address: 192.168.16.16  # 数据库地址
+  port: 3307 #数据库端口
+  prefix: test- # 数据库前缀，用于区分不同环境
+  file_prefix:  # 文件前缀，空：表示数据从navcat导出，pd表示数据从powerdesigner导出
+  db_list: # 需要创建的数据库列表
+#    - micro-customer
+#    - micro-account
+#    - micro-appconfig
+#    - micro-common
+#    - micro-company
+#    - micro-content
+#    - micro-image
+#    - micro-order
+#    - micro-platform
+#    - micro-promotion
+    - micro-product
+#    - micro-saler
+#    - micro-stat
+
+
+

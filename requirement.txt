@@ -1,0 +1,2 @@
+mysql-python==1.2.5
+pyaml==17.12.1
